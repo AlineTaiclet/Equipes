@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <br>
+        {% block title %}<h1>Team builder</h1>{% endblock %}
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="divTeam">
+                    Equipe :
+                    {{form_start(equipeForm)}}
+                    {{form_widget(equipeForm)}}
+                    <button class="btn btn-success"
+                       type="submit">
+                        <span class="glyphicon glyphicon-plus"></span>
+                        Ajouter une equipe
+                    </button>
+                    {{form_end(equipeForm)}}
+                </div>
+                <div id="demo">
+                    <br/>
+                    {% for e in equipes %}
+                    <h2>{{ e.nom }}</h2>
+                    <table class="table table-striped">
+                        <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for p in e.personnes %}
+                        <tr>
+                            <td>{{ p.nom }}</td>
+                            <td>{{ p.prenom }}</td>
+                            <td></td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                        <br/>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="divUser">
+                    <table>
+                        Personne :
+                        {{form_start(personneForm)}}
+                        {{form_widget(personneForm)}}
+                                <button class="btn btn-success"
+                                        type="submit">
+                                    <span class="glyphicon glyphicon-plus"></span>
+                                    Ajouter une personne
+                                </button>
+                        {{form_end(personneForm)}}
+                    </table>
+                </div><!-- divUser -->
+
+
+                <div class="divListUser">
+
+                    <table id="tabListUser">
+
+                    </table>
+                </div>
+
+            </div>    <!-- col4 -->
+        </div><!-- row -->
+
+    </div><!-- container -->
+{% endblock %}

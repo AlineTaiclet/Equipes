@@ -13,9 +13,7 @@ class EquipeType extends AbstractType
     {
         $builder
             ->add('nom')
-            ->add('personnes',
-                null,['choice_label'=>'getFullEquipe']
-            )
+            //->add('personnes', null,['choice_label'=>'getFullEquipe'])
         ;
     }
 
