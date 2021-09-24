@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3abdc2c8-67d8-4877-8871-601a7742636c" name="Changes" comment="Commit projet" />
+    <list default="true" id="3abdc2c8-67d8-4877-8871-601a7742636c" name="Changes" comment="Commit env">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,7 +188,7 @@
       <updated>1632410257237</updated>
       <workItem from="1632410258502" duration="17000" />
       <workItem from="1632410276153" duration="1249000" />
-      <workItem from="1632467299733" duration="125000" />
+      <workItem from="1632467299733" duration="502000" />
     </task>
     <task id="LOCAL-00001" summary="Commit projet">
       <created>1632467319147</created>
@@ -194,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632467319147</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit crud">
+      <created>1632467445140</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632467445140</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +223,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit projet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit projet" />
+    <MESSAGE value="Commit crud" />
+    <MESSAGE value="Commit env" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit env" />
   </component>
 </project>
